@@ -18,7 +18,7 @@ namespace G1ANT.Addon.AudioAddon
             var synth = new SpeechSynthesizer();
             foreach (var voice in synth.GetInstalledVoices())
                 installedVoices.Add(voice.VoiceInfo.Name);
-            return new ListStructure(installedVoices, scripter:Scripter);
+            return new ListStructure(installedVoices, scripter: Scripter);
         }
 
         public override void SetValue(Structure value, string index = null)
